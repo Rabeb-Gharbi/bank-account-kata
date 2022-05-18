@@ -26,4 +26,8 @@ public class ClientAccount {
 		balanceUtils = newBalanceValue;
 	}
 
+	public void withdrawalFromAccount(AmountUtils amountUtils, Date dateTransaction) {
+		displayTransaction(amountUtils.negativeValues(), dateTransaction);
+	}
+
 }

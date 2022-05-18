@@ -15,4 +15,9 @@ public class AmountUtils {
 	public AmountUtils addValue(AmountUtils otherAmount) {
 		return amountValue(this.value + otherAmount.value);
 	}
+
+	public AmountUtils negativeValues() {
+		return amountValue(-value);
+	}
+
 }
