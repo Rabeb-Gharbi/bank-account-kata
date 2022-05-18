@@ -9,10 +9,8 @@ public class AccountUtils {
 
     public static Date convertStringToDate(String dateInput) throws ParseException {
 
-            SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy", Locale.FRANCE);
-            return (formatter.parse(dateInput));
+        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy", Locale.FRANCE);
+        return (formatter.parse(dateInput));
     }
-
-
 
 }

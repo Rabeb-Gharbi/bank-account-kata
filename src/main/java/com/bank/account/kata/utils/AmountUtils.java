@@ -11,12 +11,24 @@ public class AmountUtils {
 	public static AmountUtils amountValue(int value) {
 		return new AmountUtils(value);
 	}
-	
+
 	public AmountUtils addValue(AmountUtils otherAmount) {
 		return amountValue(this.value + otherAmount.value);
 	}
 
-	public AmountUtils negativeValues() {
+	public boolean isGreaterThan(AmountUtils secondAmount) {
+		return this.value > secondAmount.value;
+	}
+
+	public AmountUtils absValue() {
+		return amountValue(Math.abs(value));
+	}
+
+	public String convertAmountToString() {
+		return String.valueOf(value);
+	}
+
+	public AmountUtils negative() {
 		return amountValue(-value);
 	}
 
